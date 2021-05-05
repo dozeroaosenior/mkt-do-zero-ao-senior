@@ -1,0 +1,24 @@
+{
+  "name": "mkt-do-zero-ao-senior",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dozeroaosenior/mkt-do-zero-ao-senior.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dozeroaosenior/mkt-do-zero-ao-senior/issues"
+  },
+  "homepage": "https://github.com/dozeroaosenior/mkt-do-zero-ao-senior#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
+  }
+}
