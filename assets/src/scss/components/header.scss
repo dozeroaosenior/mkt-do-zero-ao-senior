@@ -1,0 +1,88 @@
+@import "../config.scss";
+
+header{
+    background-color: $laranja;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    width: 100%;
+    max-width: $max-width;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .toogle-menu{
+    display: none;
+}
+
+.header .logo {
+    flex: 1;
+}
+
+.header .logo .logo-link {
+    text-decoration: none;
+}
+
+.header .logo .logo-link h3{
+    color: $branco;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.header .menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+}
+
+.header .menu .menu-item .menu-link{
+    opacity: 0.75;
+    color: $branco;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.header .menu .menu-item .menu-link:hover{
+    opacity: 1;
+}
+
+.header .social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.header .social .social-item .social-link{
+    color: $branco;
+    text-decoration: none;
+    font-size: 26px;
+    margin-left: 25px;
+}
+
+@media(max-width: $breakpoint){
+    .header .social,
+    .header .menu{
+        display: none;
+    }
+
+    .header .toogle-menu{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: $branco;
+        font-size: 26px;
+    }
+
+    .header .logo .logo-link h3{
+        font-size: 22px;
+    }
+}
