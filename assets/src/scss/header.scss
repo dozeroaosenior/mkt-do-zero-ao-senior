@@ -1,4 +1,4 @@
-body {
-    background-color: #000;
-    border: 1px solid;
+@import "config.scss";
+body{
+    background-color: $laranja;
 }

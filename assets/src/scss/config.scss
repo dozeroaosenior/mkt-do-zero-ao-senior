@@ -1,0 +1,41 @@
+$laranja: #d36135;
+$verde: #7fb069;
+$beje: #e6aa68;
+$pele: #ece4b7;
+$preto: #02020b;
+
+$fonte-padrao: "Roboto";
+
+$breakpoint: 1024px;
+$max-width: 1248px;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $fonte-padrao;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/Roboto-Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/Roboto-BoldItalic.ttf);
+    font-style: italic;
+    font-weight: bold;
+}
