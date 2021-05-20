@@ -1,3 +1,4 @@
 node_modules/
 assets/dist/js/*
 assets/dist/css/*
+.DS_Store
