@@ -1,0 +1,87 @@
+@import "../config.scss";
+
+.banner-inicial{
+    height: 500px;
+    background-color: $laranja;
+}
+
+.banner-inicial > .carrossel{
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.banner-conteudo{
+    display: flex !important;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px !important;
+}
+
+.banner-conteudo img{
+    height: 400px;
+    align-self: flex-end !important;
+}
+
+.banner-conteudo .texto{
+    margin-right: 100px;
+}
+
+.banner-conteudo .texto h1,
+.banner-conteudo .texto h2{
+    font-size: 46px;
+    text-transform: uppercase;
+    color: $branco;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.banner-conteudo .texto p{
+    color: $branco;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.banner-conteudo .texto .banner-chamada{
+    background-color: $verde;
+    color: $branco;
+    font-size: 18px;
+    padding: 15px 40px;
+    width: fit-content;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid $verde;
+    border-radius: 5px;
+    display: block;
+}
+
+.banner-conteudo .texto .banner-chamada:hover{
+    background-color: transparent;
+}
+
+.carrossel .slick-prev:before,
+.carrossel .slick-next:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.carrossel .slick-prev::before {
+    content: "\f053";
+}
+
+.carrossel .slick-next::before {
+    content: "\f054";
+}
+
+@media (max-width: $breakpoint) {
+    .banner-conteudo .texto{
+        margin-right: 0;
+    }
+
+    .banner-conteudo img{
+        display: none !important;
+    }
+}
