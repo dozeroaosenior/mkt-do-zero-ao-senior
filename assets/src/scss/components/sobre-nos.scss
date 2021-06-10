@@ -1,0 +1,46 @@
+@import "../config.scss";
+
+.sobre-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-nos-conteudo {
+    width: 100%;
+    max-width: $max-width;
+    padding: 100px 20px;
+}
+
+.sobre-nos-conteudo > h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $laranja;
+    margin-bottom: 50px;
+}
+
+.sobre-nos-conteudo > p{
+    font-size: 22px;
+    text-align: justify;
+    color: $preto;
+    margin-bottom: 20px;
+}
+
+.sobre-nos-conteudo > .galeria{
+    margin-top: 50px;
+}
+
+@media (max-width: $breakpoint) {
+    .sobre-nos-conteudo {
+        padding: 50px 20px;
+    }
+
+    .sobre-nos-conteudo > h2{
+        font-size: 26px;
+    }
+    
+    .sobre-nos-conteudo > p{
+        font-size: 18px;
+    }
+}

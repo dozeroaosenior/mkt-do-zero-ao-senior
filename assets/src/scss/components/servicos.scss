@@ -1,0 +1,99 @@
+@import "../config.scss";
+
+.servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $verde;
+}
+
+.servicos-conteudo {
+    width: 100%;
+    max-width: $max-width;
+    padding: 100px 20px;
+}
+
+.servicos-conteudo > h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $preto;
+    margin-bottom: 50px;
+}
+
+.servicos-conteudo > .servicos-oferecidos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servicos-conteudo > .servicos-oferecidos > .servico{
+    width: 22%;
+    border: 2px solid $preto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.servicos-conteudo > .servicos-oferecidos > .servico > h4{
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $preto;
+    margin-bottom: 20px;
+}
+
+.servicos-conteudo > .servicos-oferecidos > .servico > ul{
+    color: $preto;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.servicos-conteudo > .servicos-oferecidos > .servico > p{
+    color: $preto;
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.servicos-conteudo > .servicos-oferecidos > .servico > .servico-btn{
+    width: 100%;
+    padding: 15px;
+    background-color: $laranja;
+    color: $branco;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid $laranja;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.servicos-conteudo > .servicos-oferecidos > .servico > .servico-btn:hover{
+    background-color: $preto;
+    border: 2px solid $preto;
+}
+
+@media (max-width: $breakpoint) {
+    .servicos-conteudo {
+        padding: 50px 20px;
+    }
+
+    .servicos-conteudo > h2{
+        font-size: 26px;
+    }
+    
+    .servicos-conteudo > .servicos-oferecidos{
+        flex-direction: column;
+    }
+    
+    .servicos-conteudo > .servicos-oferecidos > .servico{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .servicos-conteudo > .servicos-oferecidos > .servico > h4{
+        font-size: 22px;
+    }
+}
