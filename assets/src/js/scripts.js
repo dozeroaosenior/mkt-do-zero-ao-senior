@@ -25,4 +25,13 @@ $(document).ready(function () {
         ]
     });
 
+    $(".servico-btn").on("click", function(e){
+        e.preventDefault();
+        let plano = $(this).data("plano");
+        $("#plano").val(plano);
+        destino = $("#contato").offset().top;
+        $('html, body').animate({ 
+            scrollTop: destino - 100
+        }, 500);
+    })
 })

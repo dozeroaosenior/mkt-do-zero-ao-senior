@@ -1,0 +1,113 @@
+@import "../config.scss";
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-conteudo {
+    width: 100%;
+    max-width: $max-width;
+    padding: 100px 20px;
+}
+
+.contato-conteudo > h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $laranja;
+    margin-bottom: 30px;
+}
+
+.contato-conteudo > p{
+    font-size: 22px;
+    text-align: justify;
+    color: $preto;
+    margin-bottom: 50px;
+}
+
+.form-contato{
+    width: 100%;
+}
+
+.form-contato .campo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-contato .input-form{
+    flex: 1;
+    font-size: 18px;
+    padding: 14px;
+    outline-color: $laranja;
+}
+
+.form-contato textarea.input-form{
+    resize: none;
+    height: 250px;
+}
+
+.form-contato label{
+    width: 20%;
+    font-size: 22px;
+    color: $preto;
+    font-weight: bold;
+}
+
+.form-contato .form-btn{
+    width: 100%;
+    font-size: 18px;
+    padding: 14px;
+    color: $branco;
+    background-color: $laranja;
+    font-weight: bold;
+    border: 3px solid $laranja;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.form-contato .form-btn:hover{
+    color: $laranja;
+    background-color: transparent;
+}
+
+@media (max-width: $breakpoint) {
+    .contato-conteudo {
+        padding: 50px 20px;
+    }
+
+    .contato-conteudo > h2{
+        font-size: 26px;
+    }
+    
+    .contato-conteudo > p{
+        font-size: 18px;
+    }
+
+    .form-contato .campo{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-contato .input-form{
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .form-contato label{
+        width: 100%;
+        font-size: 18px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-contato .form-btn{
+        font-size: 16px;
+        margin-top: 0;
+    }    
+}
